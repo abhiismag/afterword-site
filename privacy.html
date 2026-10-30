@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Afterword · Privacy policy</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<nav><a href="index.html">Afterword</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>Privacy policy</h1>
+<p class="meta">Applies to the Afterword iOS app, version 0.4 and later. Last updated 30 October 2026.</p>
+
+<h2>Who is responsible</h2>
+<p>Afterword is developed and operated by <strong>Abhishek Samanta</strong>, <strong>[STREET, POSTAL CODE, CITY, COUNTRY]</strong>. Contact: <strong><a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></strong>. This person is the data controller for any personal data the app processes.</p>
+
+<h2>The short version</h2>
+<div class="note"><p>Afterword works on your phone. Your recordings, transcripts, summaries, people, notes and chat history are stored only in the app's protected storage on your device. The app has no user accounts, no analytics, no advertising, no tracking, and no server operated by us that receives your content. Speech recognition and AI summaries run on your device with Apple's built-in models or with open models you explicitly download. The only network connections the app makes are the ones you trigger: downloading a model, or sending selected text to a Mac you own and have paired yourself.</p></div>
+
+<h2>What the app processes, and where</h2>
+<table>
+<tr><th>Data</th><th>Purpose</th><th>Where it is processed and stored</th></tr>
+<tr><td>Audio recordings (voice notes, consented conversations)</td><td>Playback, transcription, export, deletion by you</td><td>On your device only, in protected app storage. Never uploaded by the app.</td></tr>
+<tr><td>Transcripts and corrections</td><td>Reading, searching, summaries, answering your questions</td><td>On your device only.</td></tr>
+<tr><td>People, roles, notes, imported text files, event dates</td><td>Organising conversations by person and time</td><td>On your device only.</td></tr>
+<tr><td>AI-generated summaries, interpretations, suggested commitments, chat answers</td><td>Helping you review what mattered; all marked as interpretations and shown with their source quote</td><td>Generated on your device (Apple Intelligence or the downloaded Gemma model) or, only if you choose it, on a Mac you own.</td></tr>
+<tr><td>App settings (chosen models, language, pairing address)</td><td>Remembering your choices</td><td>On your device. A pairing token for your own Mac is kept in the device Keychain and excluded from backups.</td></tr>
+</table>
+
+<h2>Microphone and speech recognition</h2>
+<p>Recording starts only when you tap Record and stops when you tap Stop, when you leave the app, or when you reach the 20-minute limit; an optional per-recording switch lets a recording you already started continue while the screen is locked. The system microphone indicator is shown while recording. Live transcription uses Apple's on-device speech recognition where available; the app requests on-device recognition only and does not send audio to Apple's servers. After you stop, the full recording is transcribed on the device by Apple's speech model (iOS 26 or later) or by the Whisper model if you downloaded it.</p>
+
+<h2>Optional model downloads</h2>
+<p>Nothing is downloaded automatically. If you choose to prepare the open models, the app downloads public model files from Hugging Face (huggingface.co and its file-delivery hosts): the Whisper speech model and tokenizer (about 630 MB) and the Gemma 4 language model (about 2.6 GB). Those servers see your IP address and the files requested, as with any download; your recordings, transcripts and notes are never sent to them. Hugging Face's own privacy policy applies to that download traffic. Apple's speech and intelligence models are downloaded and managed by iOS under Apple's terms.</p>
+
+<h2>Optional Mac engine</h2>
+<p>Advanced users can pair the app with an AI engine running on their own Mac over HTTPS. This is off by default. Only after you enter the pairing token and confirm the choice does the app send selected transcript or memory excerpts and your questions to that address you configured. Audio is never sent. That computer is yours; we do not operate it and receive nothing from it.</p>
+
+<h2>What we do not do</h2>
+<ul>
+<li>No accounts, sign-in, or cloud synchronisation; no server of ours stores your content.</li>
+<li>No analytics, crash-reporting SDKs, advertising, or tracking identifiers; the app's privacy manifest declares no data collection.</li>
+<li>No automatic speaker identification by voice, no emotion detection from voice, no profiling of other people, and no automatic sending of messages.</li>
+<li>No sale or sharing of personal data with third parties.</li>
+</ul>
+
+<h2>Other people in your recordings</h2>
+<p>You are responsible for recording other people only with their permission and in compliance with the law where you are (in Germany, for example, recording a non-public conversation without every participant's consent is a criminal offence under §201 StGB). The app asks you to confirm that participants agreed before a conversation recording can be saved, and the person you assign to a conversation is a label you choose, not a biometric identification.</p>
+
+<h2>Retention, export and deletion</h2>
+<p>Everything stays until you delete it. You can delete a single recording, a person with all related records, or all local data from Settings; deleting the app removes its storage. You can export your text records as a JSON file and each recording as an audio file; exported copies are under your control. The app's storage is excluded from device backups, so an export is the only backup.</p>
+
+<h2>Your rights</h2>
+<p>Because the data lives only on your device, you exercise access, correction, export and deletion directly in the app. If you believe we hold any personal data about you (for example from a support email), you can ask us to access, correct or delete it, and you can complain to your data-protection authority. In the EU/EEA the legal basis for the app's processing on your device is your consent and the performance of the service you requested (GDPR Art. 6(1)(a) and (b)); any special-category data in your own recordings is processed on your device under your explicit choice (Art. 9(2)(a)).</p>
+
+<h2>Children</h2>
+<p>Afterword is not directed at children under 16 and we do not knowingly process their data.</p>
+
+<h2>Changes</h2>
+<p>If a future version changes what the app processes (for example an optional cloud feature), this policy will be updated before that version ships and the date above will change.</p>
+</main></body></html>
