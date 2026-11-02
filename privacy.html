@@ -2,13 +2,13 @@
 <body><main>
 <nav><a href="index.html">Afterword</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
 <h1>Privacy policy</h1>
-<p class="meta">Applies to the Afterword iOS app, version 0.4 and later. Last updated 30 October 2026.</p>
+<p class="meta">Applies to the Afterword iOS app, version 0.5 and later. Last updated 2 November 2026.</p>
 
 <h2>Who is responsible</h2>
-<p>Afterword is developed and operated by <strong>Abhishek Samanta</strong>, <strong>[STREET, POSTAL CODE, CITY, COUNTRY]</strong>. Contact: <strong><a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></strong>. This person is the data controller for any personal data the app processes.</p>
+<p>Afterword is developed and operated by <strong>Abhishek Samanta</strong>, <strong>1/2A/1A, Ramkrishna Naskar Lane, Beleghata Main Road, Kolkata 700010, India</strong>. Contact: <strong><a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></strong>. This person is the data controller for any personal data the app processes.</p>
 
 <h2>The short version</h2>
-<div class="note"><p>Afterword works on your phone. Your recordings, transcripts, summaries, people, notes and chat history are stored only in the app's protected storage on your device. The app has no user accounts, no analytics, no advertising, no tracking, and no server operated by us that receives your content. Speech recognition and AI summaries run on your device with Apple's built-in models or with open models you explicitly download. The only network connections the app makes are the ones you trigger: downloading a model, or sending selected text to a Mac you own and have paired yourself.</p></div>
+<div class="note"><p>Afterword works on your phone. Your recordings, transcripts, summaries, people, notes and chat history are stored only in the app's protected storage on your device. The app has no user accounts, no analytics, no advertising, no tracking, and no server operated by us that receives your content. Speech recognition and AI summaries run on your device with Apple's built-in models or with open models you explicitly download. The only network connections the app makes are the ones you trigger: downloading a model, sending selected text to a Mac you own and have paired yourself, or sending selected text to a cloud AI provider you chose and configured with your own API key.</p></div>
 
 <h2>What the app processes, and where</h2>
 <table>
@@ -16,7 +16,7 @@
 <tr><td>Audio recordings (voice notes, consented conversations)</td><td>Playback, transcription, export, deletion by you</td><td>On your device only, in protected app storage. Never uploaded by the app.</td></tr>
 <tr><td>Transcripts and corrections</td><td>Reading, searching, summaries, answering your questions</td><td>On your device only.</td></tr>
 <tr><td>People, roles, notes, imported text files, event dates</td><td>Organising conversations by person and time</td><td>On your device only.</td></tr>
-<tr><td>AI-generated summaries, interpretations, suggested commitments, chat answers</td><td>Helping you review what mattered; all marked as interpretations and shown with their source quote</td><td>Generated on your device (Apple Intelligence or the downloaded Gemma model) or, only if you choose it, on a Mac you own.</td></tr>
+<tr><td>AI-generated summaries, interpretations, suggested commitments, chat answers</td><td>Helping you review what mattered; all marked as interpretations and shown with their source quote</td><td>Generated on your device (Apple Intelligence or the downloaded Gemma model) or, only if you choose it, on a Mac you own or by a cloud AI provider you selected with your own key.</td></tr>
 <tr><td>App settings (chosen models, language, pairing address)</td><td>Remembering your choices</td><td>On your device. A pairing token for your own Mac is kept in the device Keychain and excluded from backups.</td></tr>
 </table>
 
@@ -29,9 +29,12 @@
 <h2>Optional Mac engine</h2>
 <p>Advanced users can pair the app with an AI engine running on their own Mac over HTTPS. This is off by default. Only after you enter the pairing token and confirm the choice does the app send selected transcript or memory excerpts and your questions to that address you configured. Audio is never sent. That computer is yours; we do not operate it and receive nothing from it.</p>
 
+<h2>Optional cloud AI with your own key</h2>
+<p>Version 0.5 adds an optional way to use a stronger reasoning model through a cloud provider's API (for example Groq, OpenRouter, DeepSeek, Alibaba Cloud, or any OpenAI-compatible endpoint you enter). This is off by default and nothing is sent until you paste an API key from your own account with that provider, confirm consent in the app, and select the cloud model. When it is selected, the app sends the transcript excerpt or memory excerpts you are working with, your question, and the names of the people you chose, over HTTPS, to that provider. Audio is never sent. The provider's own privacy policy and data-retention terms apply to what you send; some free tiers may log or use prompts, so check the provider's terms before using it for conversations with other people. The API key is stored only in your device's Keychain and is removed by "Forget cloud key" or "Erase all local records". We do not operate these providers, hold no account of yours with them, and receive nothing from them. Every answer is checked on your device against your own records before it is shown.</p>
+
 <h2>What we do not do</h2>
 <ul>
-<li>No accounts, sign-in, or cloud synchronisation; no server of ours stores your content.</li>
+<li>No accounts, sign-in, or cloud synchronisation; no server of ours stores your content. A cloud AI provider is used only if you add your own key and confirm it.</li>
 <li>No analytics, crash-reporting SDKs, advertising, or tracking identifiers; the app's privacy manifest declares no data collection.</li>
 <li>No automatic speaker identification by voice, no emotion detection from voice, no profiling of other people, and no automatic sending of messages.</li>
 <li>No sale or sharing of personal data with third parties.</li>
